@@ -440,7 +440,6 @@ html {
     border: 1px solid var(--accent-color);
 }
 
-
 /* Projects */
 
 /* Button projects */
@@ -731,6 +730,7 @@ html {
 }
 
 /* Modal window */
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -741,7 +741,6 @@ html {
 
     z-index: 100;
     opacity: 1;
-    /* visibility: visible; */
     pointer-events: initial;
 
     transform: translate(-50% -50%) scale(1);
@@ -750,7 +749,6 @@ html {
 
 .backdrop.is-hidden {
     opacity: 0;
-    /* visibility: hidden; */
     pointer-events: none;
 }
 
@@ -777,7 +775,7 @@ html {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn {
+.modal__btn {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -791,13 +789,13 @@ html {
     padding: 5px;
 }
 
-.modal-btn-icon {
+.modal__btn-icon {
     display: inline-block;
     flex-shrink: 0;
     transition: fill var(--anim-slov);
 }
 
-.modal-btn-icon:hover {
+.modal__btn-icon:hover {
     fill: var(--accent-color);
 }
 
@@ -806,7 +804,7 @@ label {
     margin: 0 auto;
 }
 
-.subscription-title {
+.subscription__title {
     margin-top: 40px;
     margin-bottom: 12px;
 
@@ -818,31 +816,32 @@ label {
     color: var(--title-text-color);
 }
 
-.subscription-form {
+.subscription__form {
     width: 528px;
     height: 581px;
 }
 
-.subscription-form-group {
+.subscription__group {
     width: 448px;
     height: 342px;
     margin-left: 40px;
     margin-right: 40px;
     margin-bottom: 20px;
+    /* gap: 10px; */
 }
 
-.subscription-form-field {
+.subscription__field {
     position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
 }
 
-.subscription-form-field:last-child {
+.subscription__field:last-child {
     margin-bottom: 0px;
 }
 
-.subscription-field-name {
+.subscription__name {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
@@ -851,7 +850,7 @@ label {
     margin-bottom: 4px;
 }
 
-.subscription-field-input {
+.subscription__input {
     display: inline-block;
     width: 100%;
     height: 40px;
@@ -865,20 +864,17 @@ label {
     transition: border var(--anim-slov);
 }
 
-/* .subscription-field-input:hover, */
-.subscription-field-input:focus,
-/* .subscription-field-textarea:hover, */
-.subscription-field-textarea:focus {
+.subscription__input:focus,
+.subscription__textarea:focus {
     border: 1px solid var(--accent-color);
     border-radius: 4px;
 }
 
-/* .subscription-field-input:hover + .subscription-field-icon, */
-.subscription-field-input:focus + .subscription-field-icon {
+.subscription__input:focus + .subscription__input-icon {
     fill: var(--accent-color);
 }
 
-.subscription-field-icon {
+.subscription__input-icon {
     position: absolute;
     display: inline-block;
     flex-shrink: 0;
@@ -888,7 +884,7 @@ label {
     transition: fill var(--anim-slov);
 }
 
-.subscription-field-textarea {
+.subscription__textarea {
     display: inline-block;
     resize: none;
     width: 448px;
@@ -907,7 +903,7 @@ label {
     transition: border var(--anim-slov);
 }
 
-.subscription-contract-flied {
+.subscription__contract-flied {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -916,7 +912,7 @@ label {
     margin-bottom: 30px;
 }
 
-.subscription-contract-check {
+.subscription__contract-check {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -931,23 +927,23 @@ label {
         background-color var(--anim-slov);
 }
 
-.subscription-contract-input:checked + .subscription-contract-check {
+.subscription__contract-input:checked + .subscription__contract-check {
     outline: var(--accent-color);
     background-color: var(--accent-color);
 }
 
-.subscription-contract {
+.subscription__contract {
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
-.subscription-contract-name {
+.subscription__contract-name {
     color: var(--accent-color);
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
-.subscription-form-btn {
+.subscription__form-btn {
     display: flex;
     align-items: center;
     text-align: center;
