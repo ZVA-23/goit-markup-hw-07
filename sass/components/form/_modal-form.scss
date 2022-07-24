@@ -34,10 +34,10 @@ label {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-}
 
-.subscription__field:last-child {
-    margin-bottom: 0px;
+    &:last-child {
+        margin-bottom: 0px;
+    }
 }
 
 .subscription__name {
@@ -61,6 +61,11 @@ label {
     outline: transparent;
 
     transition: border var(--anim-slov);
+
+    &:focus {
+        border: 1px solid var(--accent-color);
+        border-radius: 4px;
+        }
 }
 
 .subscription__input:focus,
@@ -100,6 +105,12 @@ label {
     outline: transparent;
 
     transition: border var(--anim-slov);
+
+    
+    &:focus {
+        border: 1px solid var(--accent-color);
+        border-radius: 4px;
+        }
 }
 
 .subscription__contract-flied {

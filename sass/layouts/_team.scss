@@ -65,11 +65,11 @@
 
     transition: fill var(--anim-slov),
         background-color var(--anim-slov);
-}
 
-.team__social-link:hover {
-    background-color: var(--accent-color);
-    fill: var(--primary-white-color);
+    &:hover {
+        background-color: var(--accent-color);
+        fill: var(--primary-white-color);
+        }
 }
 
 .team__social-icon {

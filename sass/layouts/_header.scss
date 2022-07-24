@@ -25,12 +25,14 @@
 
     padding-top: 32px;
     padding-bottom: 32px;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        }
 }
 
-.header__nav-link:hover,
-.header__nav-link:focus {
-    color: var(--accent-color);
-}
+
 
 .header__nav-link--current {
     color: var(--accent-color);

@@ -33,12 +33,14 @@
     fill: var(--primary-white-color);
 
     transition: background-color var(--anim-slov);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        }
 }
 
-.footer__social-link:hover,
-.footer__social-link:focus {
-    background-color: var(--accent-color);
-}
+
 
 .footer__social-icon {
     display: inline-block;

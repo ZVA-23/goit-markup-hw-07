@@ -5,12 +5,13 @@
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
+
+    &__primary {
+        color: #000000;
+        }
+
+    &__secondary {
+        color: var(--primary-white-color);
+        }
 }
 
-.logo__primary {
-    color: #000000;
-}
-
-.logo__secondary {
-    color: var(--primary-white-color);
-}

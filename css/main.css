@@ -328,7 +328,6 @@ html {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .section__title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -346,11 +345,9 @@ html {
   line-height: 1.19;
   text-decoration: none;
 }
-
 .logo__primary {
   color: #000000;
 }
-
 .logo__secondary {
   color: var(--primary-white-color);
 }
@@ -395,9 +392,7 @@ html {
   transition: color var(--anim-slov), background-color var(--anim-slov), box-shadow var(--anim-slov);
   transition: color var(--anim-slov), background-color var(--anim-slov), box-shadow var(--anim-slov), -webkit-box-shadow var(--anim-slov);
 }
-
-.project__btn-secondary:hover,
-.project__btn-secondary:focus {
+.project__btn-secondary:hover, .project__btn-secondary:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -507,8 +502,6 @@ html {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* transform: translate(-50%, -50%) scale(1);
-  transition: transform var(--anim-slov); */
   border-radius: 4px 0px, 4px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
@@ -593,7 +586,6 @@ label {
           flex-direction: column;
   margin-bottom: 10px;
 }
-
 .subscription__field:last-child {
   margin-bottom: 0px;
 }
@@ -617,6 +609,10 @@ label {
   outline: transparent;
   -webkit-transition: border var(--anim-slov);
   transition: border var(--anim-slov);
+}
+.subscription__input:focus {
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
 }
 
 .subscription__input:focus,
@@ -655,6 +651,10 @@ label {
   outline: transparent;
   -webkit-transition: border var(--anim-slov);
   transition: border var(--anim-slov);
+}
+.subscription__textarea:focus {
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
 }
 
 .subscription__contract-flied {
@@ -768,9 +768,7 @@ label {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
-.header__nav-link:hover,
-.header__nav-link:focus {
+.header__nav-link:hover, .header__nav-link:focus {
   color: var(--accent-color);
 }
 
@@ -1030,7 +1028,6 @@ label {
   -webkit-transition: fill var(--anim-slov), background-color var(--anim-slov);
   transition: fill var(--anim-slov), background-color var(--anim-slov);
 }
-
 .team__social-link:hover {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
@@ -1067,7 +1064,6 @@ label {
   -webkit-transition: fill var(--anim-slov), border var(--anim-slov);
   transition: fill var(--anim-slov), border var(--anim-slov);
 }
-
 .clients__list-item:hover {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
@@ -1088,9 +1084,7 @@ label {
   -webkit-transition: color var(--anim-slov);
   transition: color var(--anim-slov);
 }
-
-.project__card-item:hover,
-.project__card-item:focus {
+.project__card-item:hover, .project__card-item:focus {
   cursor: pointer;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1172,7 +1166,6 @@ label {
 .footer__contact-item {
   margin-bottom: 9px;
 }
-
 .footer__contact-item:last-child {
   margin-bottom: 0;
 }
@@ -1184,14 +1177,12 @@ label {
   text-decoration: none;
 }
 
-.footer__contact-link.current {
+.footer__contact-link--current {
   color: var(--secondary-white-color);
   -webkit-transition: color var(--anim-slov);
   transition: color var(--anim-slov);
 }
-
-.footer__contact-link--current:hover,
-.footer__contact-link--current:focus {
+.footer__contact-link--current:hover, .footer__contact-link--current:focus {
   color: var(--accent-color);
 }
 
@@ -1237,9 +1228,7 @@ label {
   -webkit-transition: background-color var(--anim-slov);
   transition: background-color var(--anim-slov);
 }
-
-.footer__social-link:hover,
-.footer__social-link:focus {
+.footer__social-link:hover, .footer__social-link:focus {
   background-color: var(--accent-color);
 }
 

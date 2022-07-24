@@ -608,7 +608,7 @@ html {
     text-decoration: none;
 }
 
-.footer__contact-link.current {
+.footer__contact-link--current {
     color: var(--secondary-white-color);
 
     transition: color var(--anim-slov);
